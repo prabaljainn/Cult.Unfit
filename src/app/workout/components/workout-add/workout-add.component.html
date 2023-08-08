@@ -1,0 +1,50 @@
+<div class="main-section"></div>
+<form [formGroup]="workoutForm" (ngSubmit)="onSubmit()" class="form-container">
+  <h1 style="font-family: Poppins">Add Trainer</h1>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Duration (Minutes)</mat-label>
+    <input matInput type="number" formControlName="durationInMinutes" />
+  </mat-form-field>
+  <div class="flex-row">
+    <mat-form-field class="intensity">
+      <mat-label>Intensity</mat-label>
+      <mat-select formControlName="intensity">
+        <mat-option value="LOW">Low</mat-option>
+        <mat-option value="MODERATE">Moderate</mat-option>
+        <mat-option value="HIGH">High</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="difficulty">
+      <mat-label>Difficulty</mat-label>
+      <mat-select formControlName="difficulty">
+        <mat-option value="BEGINNER">Beginner</mat-option>
+        <mat-option value="INTERMEDIATE">Intermediate</mat-option>
+        <mat-option value="ADVANCED">Advanced</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <mat-form-field>
+    <mat-label>Calories</mat-label>
+    <input matInput type="number" formControlName="calories" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Workout Type</mat-label>
+    <input matInput type="text" formControlName="workoutType" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Trainer</mat-label>
+    <mat-select formControlName="trainer">
+      <mat-option
+        *ngFor="let trainer of trainers"
+        [value]="trainer.trainerId"
+        >{{ trainer.name }}</mat-option
+      >
+    </mat-select>
+  </mat-form-field>
+  <button type="submit" mat-raised-button color="primary">Add</button>
+</form>

@@ -1,0 +1,29 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title style="font-family: 'Poppins', sans-serif">
+      {{ trainer.name }}</mat-card-title
+    >
+    <mat-card-subtitle style="font-family: 'Poppins', sans-serif"
+      >Trainer ID: {{ trainer.trainerId }}</mat-card-subtitle
+    >
+  </mat-card-header>
+
+  <mat-card-content>
+    <p style="font-family: 'Roboto Mono', monospace">
+      Age: {{ trainer.age }}<br />
+      Experience: {{ trainer.experience }}<br />
+      Gender: {{ trainer.gender }}<br />
+      Hourly Rate: {{ trainer.hourlyRate }} ₹<br />
+      Phone: {{ trainer.phone }}<br />
+      Rating: {{ trainer.rating }}<br />
+      Speciality: {{ trainer.speciality }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <div class="buttons">
+      <button color="accent" mat-raised-button>SHARE</button>
+      <button color="accent" mat-raised-button>EXPLORE</button>
+    </div>
+  </mat-card-actions>
+</mat-card>

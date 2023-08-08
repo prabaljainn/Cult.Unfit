@@ -1,0 +1,64 @@
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.badge-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.badge {
+  padding: 0.25rem 0.5rem;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+.content-box {
+  padding: 1rem;
+  width: 18rem;
+}
+
+.HIGH {
+  background-color: rgb(255, 83, 83);
+}
+
+.LOW {
+  background-color: rgb(186, 255, 82);
+  color: black;
+}
+
+.MODERATE {
+  background-color: rgb(255, 194, 80);
+}
+
+.ADVANCED {
+  background-color: rgb(255, 83, 83);
+}
+
+.BEGINNER {
+  background-color: rgb(186, 255, 82);
+  color: black;
+}
+
+.INTERMEDIATE {
+  background-color: rgb(255, 194, 80);
+}
+
+.calories {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.workout-type {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+mat-card {
+  margin: 1rem;
+  border-radius: 1rem;
+}

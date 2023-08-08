@@ -1,0 +1,45 @@
+<mat-card>
+  <div class="main-section">
+    <!-- <video playsinline autoplay [muted]="true" loop poster="cake.jpg">
+      <source src="../../../assets/file.mp4" type="video/webm" />
+      Your browser does not support the video tag.
+    </video> -->
+    <mat-card-content>
+      <div class="main-content">
+        <h1>
+          Join the best
+          <span class="blink" style="color: red">Gyming</span> Experience
+        </h1>
+        <div
+          style="display: flex; flex-direction: column"
+          class="button-container"
+        >
+          <a routerLink="/workouts/list">
+            <button
+              (click)="handleButtonClick()"
+              mat-raised-button
+              color="basic"
+              class="checkout-btn"
+            >
+              Check Workouts
+            </button>
+          </a>
+          <a routerLink="/trainers/list">
+            <button
+              (click)="handleButtonClick()"
+              mat-raised-button
+              color="basic"
+              class="checkout-btn"
+            >
+              Check Trainers
+            </button>
+          </a>
+        </div>
+      </div>
+    </mat-card-content>
+  </div>
+</mat-card>
+
+<mat-card-content>
+  <app-workout-list></app-workout-list>
+</mat-card-content>

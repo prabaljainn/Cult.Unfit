@@ -1,0 +1,78 @@
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem 1rem;
+  // background: rgba(255, 255, 255, 0.2);
+  // backdrop-filter: blur(1px);
+  // -webkit-backdrop-filter: blur(1px);
+  border-radius: 1rem;
+  border: 1px solid rgba(119, 119, 119, 0.5);
+}
+
+mat-form-field {
+  width: 80%;
+}
+
+.main-section {
+  height: 20rem;
+  background: url("https://proptechecosystem.com/wp-content/uploads/2023/05/Screenshot_30-1.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.main-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0px, rgba(0, 0, 0, 1) 100%)
+    repeat 0 0;
+}
+
+.main-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.flex-row {
+  padding: 0rem 1rem;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.difficulty {
+  margin-left: 1rem;
+}
+.intensity {
+  margin-right: 1rem;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

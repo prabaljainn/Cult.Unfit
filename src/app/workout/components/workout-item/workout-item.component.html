@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-content>
+    <div class="content-box">
+      <p class="heading">{{ workout.name }}</p>
+      <mat-card-subtitle
+        ><p class="sublabel">
+          {{ workout.durationInMinutes }} min
+        </p></mat-card-subtitle
+      >
+      <div class="badge-container">
+        <p class="badge" [ngClass]="workout.intensity">
+          {{ workout.intensity }}
+        </p>
+        <p class="badge" [ngClass]="workout.difficulty">
+          {{ workout.difficulty }}
+        </p>
+      </div>
+      <p class="calories">🔥 {{ workout.calories }} kcal</p>
+      <p class="workout-type">{{ workout.workoutType }}</p>
+      <p>
+        By <b>{{ trainerName }}</b>
+      </p>
+    </div>
+  </mat-card-content>
+</mat-card>

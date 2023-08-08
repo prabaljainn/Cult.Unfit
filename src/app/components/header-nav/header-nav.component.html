@@ -1,0 +1,31 @@
+<mat-sidenav-container class="sidenav-container">
+  <!-- <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <mat-toolbar>Quick Links 🚀</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="/">Home</a>
+      <a mat-list-item (click)="openBottomSheetWorkout()">Workouts</a>
+      <a mat-list-item (click)="openBottomSheetTrainer()">Trainers</a>
+    </mat-nav-list>
+  </mat-sidenav> -->
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <div>
+        <div class="qc">cult.unfit</div>
+      </div>
+      <div class="sidenav-buttons">
+        <a routerLink="/"><button mat-button>Home</button></a>
+        <button mat-button (click)="openBottomSheetWorkout()">Workouts</button>
+        <button mat-button (click)="openBottomSheetTrainer()">Trainers</button>
+      </div>
+    </mat-toolbar>
+
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

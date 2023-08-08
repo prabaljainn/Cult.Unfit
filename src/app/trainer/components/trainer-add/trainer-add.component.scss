@@ -1,0 +1,53 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1rem rgba(119, 207, 25, 0.283);
+  margin-top: 1rem;
+
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+    .mat-label {
+      color: #333;
+    }
+  }
+
+  button {
+    margin-top: 1rem;
+    color: white;
+    background-color: #0077b6; // A shade of blue
+    &:hover {
+      background-color: darken(#0077b6, 10%); // Darken on hover
+    }
+  }
+
+  // Style the mat-select specifically
+  mat-select {
+    width: 100%;
+    .mat-select-value {
+      color: #555;
+    }
+  }
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.gender,
+.rate {
+  margin-right: 1rem;
+}
+.rating,
+.age {
+  margin-left: 1rem;
+}

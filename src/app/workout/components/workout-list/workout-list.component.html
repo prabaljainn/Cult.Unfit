@@ -1,0 +1,11 @@
+<h1 class="heading">All Workouts</h1>
+<div class="svg-container">
+  <app-loader-svg></app-loader-svg>
+</div>
+
+<div class="list-container">
+  <app-workout-item
+    *ngFor="let workout of workouts"
+    [workout]="workout"
+  ></app-workout-item>
+</div>
