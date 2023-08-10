@@ -7,7 +7,8 @@ import { Trainer } from '../trainer';
   providedIn: 'root',
 })
 export class TrainerService {
-  private BASE_URL = 'http://localhost:8080/trainers/v1';
+  private BASE_URL =
+    'http://cultunfitbackend-production.up.railway.app/trainers/v1';
   constructor(private http: HttpClient) {}
 
   // Get mappings
