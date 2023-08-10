@@ -17,7 +17,6 @@ export class TrainerService {
   }
 
   getTrainerById(id: number) {
-    // http://localhost:8080/trainers/v1/trainers/1
     return this.http.get(`${this.BASE_URL}/trainers/trainer-id/${id}`);
   }
 

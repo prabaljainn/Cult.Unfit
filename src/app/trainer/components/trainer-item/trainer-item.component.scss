@@ -64,3 +64,110 @@
   color: white;
   background-color: rgba(47, 161, 255, 0.924);
 }
+.heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.badge-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.badge {
+  padding: 0.25rem 0.5rem;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+.content-box {
+  padding: 1rem;
+  width: 18rem;
+}
+
+.HIGH {
+  background-color: rgb(255, 83, 83);
+}
+
+.LOW {
+  background-color: rgb(186, 255, 82);
+  color: black;
+}
+
+.MODERATE {
+  background-color: rgb(255, 194, 80);
+}
+
+.ADVANCED {
+  background-color: rgb(255, 83, 83);
+}
+
+.BEGINNER {
+  background-color: rgb(186, 255, 82);
+  color: black;
+}
+
+.INTERMEDIATE {
+  background-color: rgb(255, 194, 80);
+}
+
+.speciality {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: rgb(225, 213, 47);
+}
+
+.workout-type {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: greenyellow;
+}
+
+mat-card {
+  margin: 1rem;
+  border-radius: 1rem;
+}
+.FIVE {
+  color: rgb(0, 255, 0);
+}
+.FOUR {
+  color: rgb(186, 255, 82);
+}
+.THREE {
+  color: rgb(255, 194, 80);
+}
+.TWO {
+  color: rgb(227, 62, 62);
+}
+.ONE {
+  color: rgb(255, 0, 0);
+}
+.sublabel-id {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: rgb(246, 246, 246);
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+mat-card {
+  overflow: hidden;
+  position: relative;
+}
+.img-bg {
+  width: 40%;
+}
+.img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,4 +1,4 @@
-<mat-card class="example-card">
+<!-- <mat-card class="example-card">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title style="font-family: 'Poppins', sans-serif">
@@ -26,4 +26,38 @@
       <button color="accent" mat-raised-button>EXPLORE</button>
     </div>
   </mat-card-actions>
+</mat-card> -->
+<mat-card>
+  <div class="img-container">
+    <img class="img-bg" [src]="getImage()" alt="avatar" />
+  </div>
+  <mat-card-content>
+    <div class="content-box">
+      <p class="heading">
+        {{ trainer.name }}
+      </p>
+
+      <div class="contains">
+        <mat-card-subtitle
+          ><p class="sublabel">{{ trainer.age }} Y</p></mat-card-subtitle
+        >
+      </div>
+      <div class="badge-container">
+        <p class="badge">
+          {{ trainer.gender }}
+        </p>
+        <p class="badge">{{ trainer.hourlyRate }}₹</p>
+      </div>
+      <p class="speciality">Speciality: {{ trainer.speciality }}</p>
+      <p class="workout-type" [ngClass]="trainer.rating">
+        {{ trainer.rating }}
+      </p>
+      <div class="flex-row">
+        <p>
+          Experience : <b>{{ trainer.experience }} Years</b>
+        </p>
+        <span class="sublabel-id">#{{ trainer.trainerId }}</span>
+      </div>
+    </div>
+  </mat-card-content>
 </mat-card>
