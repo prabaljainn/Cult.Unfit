@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class WorkoutService {
   constructor(private http: HttpClient, private router: Router) {}
 
-  url = 'http://cultunfitbackend-production.up.railway.app/workouts/v1';
+  url = 'https://cultunfitbackend-production.up.railway.app/workouts/v1';
 
   getWorkoutsObservable(): Observable<Workout[]> {
     return this.http.get<any>(`${this.url}/workouts`).pipe<Workout[]>(

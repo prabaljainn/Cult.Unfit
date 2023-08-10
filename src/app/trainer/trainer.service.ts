@@ -8,7 +8,7 @@ import { Trainer } from '../trainer';
 })
 export class TrainerService {
   private BASE_URL =
-    'http://cultunfitbackend-production.up.railway.app/trainers/v1';
+    'https://cultunfitbackend-production.up.railway.app/trainers/v1';
   constructor(private http: HttpClient) {}
 
   // Get mappings
